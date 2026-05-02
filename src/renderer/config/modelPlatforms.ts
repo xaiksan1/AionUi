@@ -83,6 +83,10 @@ export const MODEL_PLATFORMS: PlatformConfig[] = [
   { name: 'Gemini (Vertex AI)', value: 'gemini-vertex-ai', logo: GeminiLogo, platform: 'gemini-vertex-ai' },
 
   // 预设供应商（按字母顺序排列）
+  // Alexandria ecosystem
+  { name: 'Hermes Agent (Alexandria)', value: 'Hermes-Agent', logo: null, platform: 'custom', baseUrl: 'https://hermes-agent-alexandria.fly.dev/v1' },
+  { name: 'Ollama (Local)', value: 'Ollama', logo: null, platform: 'custom', baseUrl: 'http://localhost:11434/v1' },
+
   { name: 'OpenAI', value: 'OpenAI', logo: OpenAILogo, platform: 'custom', baseUrl: 'https://api.openai.com/v1' },
   { name: 'Anthropic', value: 'Anthropic', logo: AnthropicLogo, platform: 'anthropic', baseUrl: 'https://api.anthropic.com' },
   { name: 'AWS Bedrock', value: 'AWS-Bedrock', logo: BedrockLogo, platform: 'bedrock', i18nKey: 'settings.platformBedrock' },

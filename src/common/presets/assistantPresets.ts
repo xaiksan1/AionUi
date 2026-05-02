@@ -24,6 +24,28 @@ export type AssistantPreset = {
 
 export const ASSISTANT_PRESETS: AssistantPreset[] = [
   {
+    id: 'alexandria-steering-brain',
+    avatar: '🧠',
+    presetAgentType: 'acp',
+    resourceDir: 'assistant/alexandria-steering-brain',
+    ruleFiles: {
+      'en-US': 'alexandria-steering-brain.md',
+      'zh-CN': 'alexandria-steering-brain.md',
+    },
+    nameI18n: {
+      'en-US': 'Alexandria Steering Brain',
+      'fr-FR': 'Alexandria Cerveau Directeur',
+    },
+    descriptionI18n: {
+      'en-US': "Zangetsu's orchestration intelligence. Routes tasks to Hermes-Agent (fly.dev) or Ollama local LLMs. Knows the full Alexandria ecosystem: ADAM, agentic-ads, BLUE, Ghost Protocol.",
+      'fr-FR': "Intelligence d'orchestration de Zangetsu. Routing vers Hermes-Agent (fly.dev) ou Ollama local. Connait tout l'écosystème Alexandria.",
+    },
+    promptsI18n: {
+      'en-US': ['What is the current state of the Alexandria ecosystem?', 'Check agentic-ads bid engine and revenue status', 'Run a BLUE sovereign pheromone broadcast'],
+      'fr-FR': ["Quel est l'état actuel de l'écosystème Alexandria?", 'Vérifier le bid engine agentic-ads et les revenus', 'Lancer un broadcast de phéromones BLUE sovereign'],
+    },
+  },
+  {
     id: 'openclaw-setup',
     avatar: '🦞',
     presetAgentType: 'gemini',
